@@ -25,7 +25,7 @@ async function uploadImage() {//accepting file gambar
         displayResult(data);
     } catch (error) {
         console.error(error);
-        alert(`Error scanning barcode: ${error.message}`);
+        alert(`Error scanning barcode: ${error.message} server not be ready`);
     }
 }
 
