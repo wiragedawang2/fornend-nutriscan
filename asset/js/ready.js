@@ -11,7 +11,7 @@ async function uploadImage() {//accepting file gambar
     formData.append('file', file);
 
     try {
-        const response = await fetch('https://34.50.72.107:8000/scan-barcode/', { // server backend sesuaikan yaa!!!
+        const response = await fetch('http://127.0.0.1:8000/scan-barcode/', { // server backend sesuaikan yaa!!!
             method: 'POST',
             body: formData,
         });
